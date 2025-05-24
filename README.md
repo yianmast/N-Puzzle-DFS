@@ -8,6 +8,27 @@ This project implements a **Depth-First Search algorithm** to solve the N-Puzzle
 - Uses DFS to explore state space and find a solution path.
 - Prints each step from initial to goal state, showing how the blank tile (`0`) moves.
 
+### 🔍 Depth-First Search (DFS) Algorithm
+
+The **Depth-First Search (DFS)** algorithm explores the puzzle by diving as deep as possible along each branch before backtracking. It uses a **stack-based (LIFO)** approach, meaning it always expands the most recently discovered node that still has unexplored children.
+
+#### How it works:
+1. Starts from the initial state.
+2. Pushes the node onto a stack (the "frontier").
+3. Pops the last added node from the frontier for exploration.
+4. If the node is the goal state, it returns the path.
+5. Otherwise, it generates all possible children (next states) and adds them to the frontier **in reverse order** to maintain the correct step sequence.
+6. It skips already-explored states to avoid loops.
+7. Continues this process until the goal is found or all possibilities are exhausted.
+
+#### Characteristics:
+- ⚠️ **Not optimal:** May not find the shortest solution.
+- ❌ **Not complete:** Can get stuck in deep or infinite branches unless depth is limited.
+- 💡 **Memory efficient:** Uses less memory than BFS by focusing on one path at a time.
+
+Use DFS when memory is limited or when you want to find *a* solution fast rather than *the best* solution.
+
+
 ## 📂 Files
 
 - `solver.py`: Contains core logic for DFS, legal moves, child generation, and backtracking path.
