@@ -12,8 +12,8 @@ This project implements a **Depth-First Search algorithm** to solve the N-Puzzle
 
 - `solver.py`: Contains core logic for DFS, legal moves, child generation, and backtracking path.
 - `puzzle.py`: Runs the solver and prints step-by-step state transitions.
-- `example_input.txt`: Example puzzle input format for reference (optional).
-- `assets/puzzle_demo.gif`: Demo showing solution steps (optional).
+- `example_input.txt`: Example puzzle input format for reference.
+- `sample.docx` : Screenshot of sample inputs and outputs
 
 ## ▶️ How to Run
 
